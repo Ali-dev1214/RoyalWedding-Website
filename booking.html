@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plan Your Wedding | Royal Wedding</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/site.css"  />
+</head>
+<body>
+    <div class="announcement"><span>✦</span> ROYAL WEDDING PLANNER &nbsp;·&nbsp; Creating celebrations worth remembering <span>✦</span> <a href="booking.html">Book a consultation</a></div>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Royal Wedding home">
+    <span class="brand-mark">R</span><span>ROYAL <small>WEDDING PLANNER · MULTAN</small></span>
+  </a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+  <nav class="main-nav" id="mainNav">
+    <a href="index.html">Home</a><a href="about.html">Our Story</a><a href="services.html">Services</a><a href="venues.html">Venues</a>
+    <a href="packages.html">Packages</a><a href="gallery.html">Gallery</a><a href="testimonials.html">Reviews</a>
+    <a href="contact.html">Contact</a><a class="btn btn-small nav-book" href="booking.html">Plan Your Event ↗</a>
+  </nav>
+</header>
+
+    <main>
+        <section class="page-hero booking-hero"><div><span class="eyebrow light-eyebrow">LET'S MAKE A PLAN</span><h1>Tell us about<br /><em>your big day.</em></h1><p>This is a frontend demo form. It will not save or submit bookings.</p></div></section>
+<section class="section form-layout"><div><span class="eyebrow">YOUR CELEBRATION STARTS HERE</span><h2>Build your wedding plan</h2><p class="muted">Share a few details and explore an estimated budget. Our form is for UI demonstration only.</p><div class="form-aside"><b>Prefer a conversation?</b><p>Call +92 300 1234567</p><p>hello@royalwedding.pk</p></div></div>
+<form class="form-card booking-calculator" id="bookingForm">
+<div class="form-card-heading"><span class="eyebrow">YOUR EVENT DETAILS</span><h3>Build your celebration estimate</h3><p>Choose the events you need. Each event is calculated separately by guest count and per-head rate.</p></div>
+<div class="form-row"><label>Full name<input id="bookingName" required placeholder="Your full name"></label><label>Phone number<input id="bookingPhone" required type="tel" placeholder="+92 3XX XXXXXXX"></label></div>
+<div class="form-row"><label>Email address<input id="bookingEmail" type="email" placeholder="you@example.com"></label><label>Wedding date<input id="weddingDate" type="date"></label></div>
+<label>City<select id="bookingCity"><option value="">Select city</option><option>Multan</option><option>Lahore</option><option>Islamabad</option><option>Other</option></select></label>
+<div class="event-rate-list">
+  <h3>Select your wedding events</h3>
+  <p class="muted">Sample per-person rates in PKR. Select an event and enter the expected guests.</p>
+  <article class="event-rate-card" data-event="Mehndi" data-rate="1800">
+    <div class="event-rate-photo"><img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=700" alt="Mehndi event hall"></div>
+    <div class="event-rate-content"><label class="event-enable"><input type="checkbox" class="event-active"> <b>Mehndi Celebration</b></label><p>Colourful décor and festive dining</p>
+      <div class="form-row"><label>Choose hall<select class="event-hall"><option>Rang Celebration Hall</option><option>The Garden Marquee</option><option>Mehfil Lawn</option></select></label><label>Guests<input class="event-guests" type="number" min="1" value="100"></label></div>
+      <div class="rate-line"><span>Per head: <b>PKR 1,800</b></span><strong class="event-subtotal">PKR 0</strong></div>
+    </div>
+  </article>
+  <article class="event-rate-card" data-event="Baraat" data-rate="3000">
+    <div class="event-rate-photo"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=700" alt="Baraat wedding hall"></div>
+    <div class="event-rate-content"><label class="event-enable"><input type="checkbox" class="event-active"> <b>Baraat Celebration</b></label><p>Grand stage, banquet and wedding dinner</p>
+      <div class="form-row"><label>Choose hall<select class="event-hall"><option>Royal Crown Ballroom</option><option>Regal Palace Marquee</option><option>Grand Heritage Hall</option></select></label><label>Guests<input class="event-guests" type="number" min="1" value="250"></label></div>
+      <div class="rate-line"><span>Per head: <b>PKR 3,000</b></span><strong class="event-subtotal">PKR 0</strong></div>
+    </div>
+  </article>
+  <article class="event-rate-card" data-event="Walima" data-rate="2500">
+    <div class="event-rate-photo"><img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=700" alt="Walima reception hall"></div>
+    <div class="event-rate-content"><label class="event-enable"><input type="checkbox" class="event-active"> <b>Walima Reception</b></label><p>Elegant reception and refined dining</p>
+      <div class="form-row"><label>Choose hall<select class="event-hall"><option>The Pearl Banquet</option><option>Crystal View Marquee</option><option>Serene Grand Hall</option></select></label><label>Guests<input class="event-guests" type="number" min="1" value="200"></label></div>
+      <div class="rate-line"><span>Per head: <b>PKR 2,500</b></span><strong class="event-subtotal">PKR 0</strong></div>
+    </div>
+  </article>
+  <article class="event-rate-card" data-event="Mayun" data-rate="1500">
+    <div class="event-rate-photo"><img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?w=700" alt="Mayun celebration venue"></div>
+    <div class="event-rate-content"><label class="event-enable"><input type="checkbox" class="event-active"> <b>Mayun Gathering</b></label><p>Traditional intimate family event</p>
+      <div class="form-row"><label>Choose hall<select class="event-hall"><option>Golden Courtyard</option><option>Rosewood Garden</option><option>Mehmaan Hall</option></select></label><label>Guests<input class="event-guests" type="number" min="1" value="80"></label></div>
+      <div class="rate-line"><span>Per head: <b>PKR 1,500</b></span><strong class="event-subtotal">PKR 0</strong></div>
+    </div>
+  </article>
+</div>
+<div class="check-grid booking-addons"><label><input type="checkbox" class="service-check" data-price="30000"> Photography (+PKR 30,000)</label><label><input type="checkbox" class="service-check" data-price="50000"> Videography (+PKR 50,000)</label><label><input type="checkbox" class="service-check" data-price="50000"> Stage décor (+PKR 50,000)</label><label><input type="checkbox" class="service-check" data-price="25000"> Bridal makeup (+PKR 25,000)</label></div>
+<label>Special requests<textarea id="bookingNotes" rows="3" placeholder="Share your theme, preferences or any special requirements..."></textarea></label>
+<div class="bill-summary"><div class="bill-title"><span class="eyebrow">LIVE BILL SUMMARY</span><h3>Your estimated total</h3></div><div id="billBreakdown" class="bill-breakdown"><p>Select an event to see its cost breakdown.</p></div><div class="bill-total"><span>Estimated total bill</span><strong id="estimateTotal">PKR 0</strong></div><small>Illustrative UI estimate only. Final venue and catering quote may vary.</small></div>
+<button class="btn booking-submit" type="submit">Submit booking information ↗</button>
+<div id="bookingSuccess" class="booking-success" role="status" aria-live="polite" hidden></div>
+<p class="form-message" id="bookingMessage" role="status"></p>
+<small class="muted">Frontend demonstration only — no information is stored or sent to a server.</small>
+</form></section>
+
+    
+<section class="section booking-guide-section soft-section"><div class="center-heading"><span class="eyebrow">HOW YOUR ESTIMATE WORKS</span><h2>Every event is calculated separately.</h2><p>Choose the functions you are hosting, then enter the expected guest count for each one.</p></div><div class="booking-guide-grid"><article><b>01</b><h3>Choose an event</h3><p>Activate Mehndi, Baraat, Walima or Mayun. You can select one function or all four.</p></article><article><b>02</b><h3>Enter the guests</h3><p>Each event has its own guest count, hall selection and sample per-head rate.</p></article><article><b>03</b><h3>Review the bill</h3><p>The event subtotals and selected extras are added together to show the live estimated total.</p></article></div></section>
+<section class="section booking-rate-explainer"><div><span class="eyebrow">SAMPLE PER-HEAD RATES</span><h2>Different events,<br><em>different estimates.</em></h2><p>Use these example rates to understand how the estimate works. Actual costs depend on the confirmed menu, venue, date and agreed services.</p></div><div class="rate-explainer-list"><div><span>Mehndi</span><b>PKR 1,800 / person</b></div><div><span>Baraat</span><b>PKR 3,000 / person</b></div><div><span>Walima</span><b>PKR 2,500 / person</b></div><div><span>Mayun</span><b>PKR 1,500 / person</b></div></div></section>
+<section class="section booking-check-section soft-section"><div class="center-heading"><span class="eyebrow">BEFORE YOU SUBMIT</span><h2>A few details worth preparing.</h2><p>An approximate idea is enough for this first planning exercise.</p></div><div class="booking-check-grid"><span>Preferred date or month</span><span>Event(s) you want to host</span><span>Approximate guests per event</span><span>Preferred hall style</span><span>Optional services you may need</span><span>Special family or décor requests</span></div></section>
+
+</main>
+
+    <section class="footer-cta">
+  <div><span class="eyebrow light-eyebrow">LET'S CREATE SOMETHING BEAUTIFUL</span><h2>Your celebration, <em>our commitment.</em></h2><p>Tell us what you have in mind and we'll help you plan every detail.</p></div>
+  <a class="btn footer-cta-btn" href="booking.html">Start Planning ↗</a>
+</section>
+<footer class="footer">
+  <div class="footer-main">
+    <div class="footer-brand-col"><a class="brand brand-light" href="index.html"><span class="brand-mark">R</span><span>ROYAL <small>WEDDING PLANNER</small></span></a>
+      <p>Thoughtfully planned Pakistani weddings, beautiful venues and meaningful moments — brought together with care.</p>
+      <div class="footer-social"><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">Pinterest</a></div>
+    </div>
+    <div><h4>Explore</h4><a href="about.html">Our story</a><a href="services.html">Services</a><a href="venues.html">Wedding venues</a><a href="packages.html">Packages & rates</a><a href="gallery.html">Event gallery</a><a href="testimonials.html">Guest reviews</a></div>
+    <div><h4>Wedding Events</h4><a href="index.html#mehndi-halls">Mehndi celebrations</a><a href="index.html#baraat-halls">Baraat celebrations</a><a href="index.html#walima-halls">Walima receptions</a><a href="index.html#mayun-halls">Mayun events</a></div>
+    <div><h4>Visit & Contact</h4><p class="footer-contact">Multan, Punjab, Pakistan</p><a href="tel:+923001234567">+92 300 1234567</a><a href="mailto:hello@royalwedding.pk">hello@royalwedding.pk</a><a class="footer-map" href="https://maps.google.com/?q=Multan" target="_blank" rel="noopener">Find us on the map ↗</a></div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Royal Wedding Planner. All rights reserved.</span><span>Made with care for your forever. <b>✦</b></span></div>
+</footer>
+    <script src="js/site.js" ></script>
+
+</body>
+</html>
